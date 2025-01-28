@@ -2,7 +2,7 @@
 body {
     height: 100%;
     background-color: #e5e7eb; /* bg-gray-200 */
-    font-family: 'Courier New', Courier, monospace; /* font-mono */
+    font-family:  monospace; /* font-mono */
     margin: 0;
     padding: 0;
     display: flex;
@@ -40,6 +40,8 @@ body {
 
 .header-title {
     flex: 1;
+    font-size: 42px;
+    font-weight: 900;
 }
 
 .header-menu {
@@ -88,7 +90,7 @@ body {
 }
 
 .sidebar .logo-section {
-    padding: 85px 24px 32px 24px;
+    padding: 68px 24px 32px 24px;
 }
 
 .sidebar .logo {
@@ -104,8 +106,8 @@ body {
 
 .sidebar .logo-text {
     color: #b91c1c; /* text-red-700 */
-    font-size: 24px;
-    font-weight: 800;
+    font-size: 26px;
+    font-weight: 900;
 }
 
 /* Navigation Menu */
@@ -121,6 +123,7 @@ body {
 }
 
 .nav-item {
+    font-size: 16px;
     display: flex;
     align-items: center;
     gap: 12px;
