@@ -76,13 +76,17 @@ body {
 
 /* Sidebar */
 .sidebar {
+    margin-top: 81px;
     width: 256px;
+    height: 100vh; /* Full viewport height */
     background-color: white;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    position: fixed; /* Fix the sidebar to the left side */
     top: 0;
     left: 0;
-    overflow-y: hidden;
+    overflow-y: hidden; /* Allow vertical scroll */
+
 }
 
 .sidebar.open {
@@ -217,6 +221,7 @@ body {
 /* Media Queries */
 @media (max-width: 768px) {
 .sidebar {
+    margin-top: 0;
     transform: translateX(-100%);
     position: fixed;
     top: 0;
@@ -232,6 +237,7 @@ body {
 .header-menu {
     justify-content: right; /* Ensure buttons are spaced out */
     width: 100%; /* Ensure the header menu takes full width */
+    z-index: 30;
 }
 
 .header #menuButton {
